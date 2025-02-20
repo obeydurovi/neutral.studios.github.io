@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Neutral - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <img class="loader-logo" src="images/476816182_3956988467961167_5869916217283678295_n-removebg-preview.png" alt="Logo">
+        <div class="loading-text">Loading... 0%</div>
+        <div class="loadingio-spinner-double-ring-2by998twmg8">
+            <div class="ldio-yzaezf3dcmj"><div></div><div></div><div><div></div></div><div><div></div></div></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <nav class="menubar">
+            <div class="menu-left">
+                <img class="menubar-logo" src="images/476816182_3956988467961167_5869916217283678295_n-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="menu-right">
+                <a href="#">Games</a>
+                <a href="#">Assets</a>
+                <a href="team.html">Team Members</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <h1>Welcome to Team Neutral</h1>
+            <p>Your hub for game development and publishing.</p>
+
+            <section class="gallery">
+                <h2>Game Assets & Projects</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="images/game1.png" alt="Game 1">
+                        <p>Project: Adventure Quest</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/game2.png" alt="Game 2">
+                        <p>Project: Cyber Wars</p>
+                    </div>
+                    <div class="card">
+                        <img src="images.asset1.png" alt="Asset 1">
+                        <p>Asset: 2D Pixel Pack</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/asset2.png" alt="Asset 2">
+                        <p>Asset: Sci-Fi UI Kit</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>About Us</h2>
+                <p>We are passionate about game development and digital publishing. From indie games to AAA assets, we
+                    bring creativity to life.</p>
+            </section>
+
+            <section>
+                <h2>Contact Us</h2>
+                <p>Email: contact@teamneutral.com</p>
+                <p>Follow us on <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".content").style.display = "none";
+        });
+
+        window.addEventListener("load", function () {
+            let progress = 0;
+            const loadingText = document.querySelector('.loading-text');
+            const loaderWrapper = document.querySelector('.loader-wrapper');
+            const content = document.querySelector('.content');
+
+            const interval = setInterval(() => {
+                progress += 10;
+                loadingText.textContent = `Loading... ${progress}%`;
+                if (progress >= 100) {
+                    clearInterval(interval);
+
+                    setTimeout(() => {
+                        loaderWrapper.style.opacity = "0";
+                        setTimeout(() => {
+                            loaderWrapper.style.display = "none";
+                            content.style.display = "block";
+                            setTimeout(() => {
+                                content.style.opacity = "1";
+                            }, 100);
+                        }, 1000); // Loader disappears after 1 second
+                    }, 500);
+                }
+            }, 30); // Loading progress speed
+        });
+    </script>
+</body>
+</html>

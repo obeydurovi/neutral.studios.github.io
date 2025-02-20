@@ -1,0 +1,72 @@
+/* loader.css */
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #001f3f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.loader-logo {
+    width: 400px; /* Adjust as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+.loadingio-spinner-double-ring-2by998twmg8 {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+.ldio-yzaezf3dcmj div {
+    position: absolute;
+    width: 154px;
+    height: 154px;
+    border: 6px solid #3498db;
+    border-radius: 50%;
+    animation: ldio 1s linear infinite;
+    box-sizing: border-box;
+}
+
+.ldio-yzaezf3dcmj div:nth-child(2) {
+    border-color: #e74c3c;
+    animation-delay: -10s;
+}
+
+@keyframes ldio {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    font-size: 1.2em;
+    color: white;
+    position: absolute;
+    /* Adjusted positioning for better centering */
+    top: 70%;  /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%;
+    text-align: center;
+}

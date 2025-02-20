@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Neutral - Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loader (Hidden after loading) -->
+    <div class="loader-wrapper">
+        <img src="C:\Users\obeyd\Downloads\Compressed\neutral-20250220T124237Z-001\neutral\images\476816182_3956988467961167_5869916217283678295_n-removebg-preview.png" class="loader-logo" alt="Team Neutral Logo">
+        <div class="loadingio-spinner-double-ring-2by998twmg8">
+            <div class="ldio-yzaezf3dcmj">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <p class="loading-text">Loading...</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="menubar">
+        <div class="menu-left">
+            <img src="C:\Users\obeyd\Downloads\Compressed\neutral-20250220T124237Z-001\neutral\images\476816182_3956988467961167_5869916217283678295_n-removebg-preview.png" alt="Logo" class="menubar-logo">
+        </div>
+        <div class="menu-right">
+            <a href="home.html">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Assets</a>
+            <a href="#">Team Members</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Meet Our Team</h1>
+
+        <div class="team-members-container">
+            <div class="member-circle">
+                <img class="member-image" src="C:\Users\obeyd\Downloads\Compressed\neutral-20250220T124237Z-001\neutral\images\sunny.jpg" alt="Member 1">
+                <div class="member-info">
+                    <p class="member-name">Sunny</p>
+                    <p class="member-bio">Main Headache</p>
+                </div>
+            </div>
+            <div class="member-circle">
+                <img class="member-image" src="C:\Users\obeyd\Downloads\Compressed\neutral-20250220T124237Z-001\neutral\images\munim.jpeg" alt="Member 2">
+                <div class="member-info">
+                    <p class="member-name">Munim</p>
+                    <p class="member-bio">Sub ghost</p>
+                   
+                    
+                </div>
+            </div>
+            <div class="member-circle">
+                <img class="member-image" src="C:\Users\obeyd\Downloads\Compressed\neutral-20250220T124237Z-001\neutral\images\aryan.png" alt="Member 3">
+                <div class="member-info">
+                    <p class="member-name">Aryan</p>
+                    <p class="member-bio">Without Head</p>
+                </div>
+            </div>
+            <div class="member-circle">
+                <img class="member-image" src="C:\Users\obeyd\Downloads\Compressed\neutral-20250220T124237Z-001\neutral\images\blank-profile-picture-973460_1280.jpeg" alt="Member 4">
+                <div class="member-info">
+                    <p class="member-name">Ovi</p>
+                    <p class="member-bio">ME</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hide loader after page loads
+        window.addEventListener("load", function () {
+            document.querySelector(".loader-wrapper").style.opacity = "0";
+            setTimeout(() => {
+                document.querySelector(".loader-wrapper").style.display = "none";
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
